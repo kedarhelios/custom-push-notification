@@ -1,0 +1,54 @@
+{
+  "name": "create-nodejs-express-app",
+  "version": "1.7.0",
+  "description": "Create a Node.js app for building production-ready RESTful APIs using Express, by running one command",
+  "bin": "bin/createNodejsApp.js",
+  "main": "src/index.js",
+  "repository": "https://github.com/kedarMvyas02/node-express-boiler.git",
+  "author": "Kedar Vyas <kedforstudy02@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development tsc-watch --onSuccess \"node ./dist/index.js\""
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "generator",
+    "express",
+    "rest",
+    "api",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "jest",
+    "travis",
+    "docker",
+    "passport",
+    "joi",
+    "eslint",
+    "prettier"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/web-push": "^3.6.4",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.0",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.3"
+  }
+}
